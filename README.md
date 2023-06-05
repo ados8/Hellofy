@@ -45,7 +45,8 @@ What's the performance cost:
 - Even in the highest performance mode it uses less than 1% CPU and 4 MB RAM
 - You can pause or close it at any time from the system tray
 
-![image](https://github.com/ados8/Hellofy/assets/49982433/6351fb1e-5793-4c61-829e-761ef4eabaf9)
+![image](https://github.com/ados8/Hellofy/assets/49982433/24f9488f-0c04-4a2b-981d-4beab660bea1)
+
 
 How do I install it:
 1. Download the app
