@@ -11,17 +11,17 @@ I chose to write the app in AutoIt because it was one of the programing language
 It also makes the useability easier as the barrier for knowing how to install/use scripts is eliminated.
 
 How does it work:
-Hellofy runs on the Windows system looking for the Windows Hello activation.
+Hellofy runs on the Windows system looking for the HA activation.
 Once triggered through a login/authentication it controls the window to make the login a smooth as possible.
 This involves keeping the window front facing and making sure the app requesting the sign in is also front facing.
 By doing this it ensures as soon as your authenticated your loged in.
 
-What Windows Hello issues does it address:
-- Windows Hello prompt hiding or behind other windows
-- Windows Hello prompt requires clicking or interaction before login in, even if your already authenticated (basically it's stuck on screen)
+What HA issues does it address:
+- HA prompt hiding or behind other windows
+- HA prompt requires clicking or interaction before login in, even if your already authenticated (basically it's stuck on screen)
 - Reduces the login glitches from fingerprint based accessories and apps using the above
 
-What Windows Hello types are supported:
+What HA types are supported:
 - Fingerprint
 - Face
 - PIN
@@ -36,7 +36,7 @@ What about my privacy and security:
 - There is no mouse or keyboard control
 - It doesn't have any affect at the login screen
 - Only Window Hello and the app that triggered the login are "controlled" and only in regards to making them remain active for your input
-- Until the Windows Hello app is triggered the Hellofy app does nothing but sleep
+- Until the HA app is triggered the Hellofy app does nothing but sleep
 - There is no admin access or writing to your computer other than the config file on run.
 - Antivirus unlikely to have issues, feel to run it through VirusTotal. When I did the only reported false alerts where from random AVs
 - Block it from accessing the internet if your concerned 😊
@@ -56,9 +56,9 @@ How do I install it:
 
 Things to note:
 - Configuring the app is simple enough, on first run the app will make a config file in the location of itself
-- It wasn't possible to Windows Hello Fingerprint and Face unlock managed while also having PIN unlock managed.
+- It wasn't possible to HA Fingerprint and Face unlock managed while also having PIN unlock managed.
 - Don't change any values other than those proceeding `:`
-- `Polling frequency` controls the check rate of the app, basically how often it should check if the Windows Hello app is running. Default is `2` seconds, while it doesn't seem to impact performance it shouldn't be changed. With default Hellofy checks every `2` seconds if the Windows Hello app is running, when not checking it sleeps. Setting to low is wasteful, to high will mean when the Windows Hello app is running Hellofy might be asleep delaying its job.
+- `Polling frequency` controls the check rate of the app, basically how often it should check if the Windows Hello app is running. Default is `2` seconds, while it doesn't seem to impact performance it shouldn't be changed. With default Hellofy checks every `2` seconds if the Windows Hello app is running, when not checking it sleeps. Setting to low is wasteful, to high will mean when the HA app is running Hellofy might be asleep delaying its job.
 - `PIN mode` is used to override the face and fingerprint modes.
 IMPORTANT: only use this mode if you never use fingerprint or face to login. Setting `Yes` will enable PIN mode and disables fingerprint and face mode.
 Important: it will not disable or block the use of fingerprint or face login but will not use its magic to make the login smooth, it will be as if the app isn't running. It will apply magic to the PIN login experience.
