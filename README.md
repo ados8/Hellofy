@@ -9,7 +9,8 @@ These were across many devices with different apps and many people online compla
 I set out to design an app that would mitigate or resolve these pain points.
 It worked so well I became dependent on using it, realising others might benefit I created Hellofy.
 I chose to write the app in AutoIt because it was one of the programing languages I know and it has Windows UI management.
-It also makes the useability easier as the barrier for knowing how to install/use scripts is eliminated.
+It also makes the useability easier as the barrier for knowing how to install/use scripts is eliminated. The 'source code' for the script has been provided `Hellofy.au3
+`.
 
 How does it work:
 
