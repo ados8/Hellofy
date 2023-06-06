@@ -2,7 +2,8 @@
 Windows Hello Manager
 
 Description:
-This app was designed to resolve useability problems in regards to Windows Hello.
+
+This app was designed to mitigate/workaround the useability problems in regards to Windows Hello.
 As a heavy user of Windows Hello (HA) I was always running into performance and useability bugs.
 These were across many devices with different apps and many people online complained of similar if not identical issues.
 I set out to design an app that would mitigate or resolve these pain points.
